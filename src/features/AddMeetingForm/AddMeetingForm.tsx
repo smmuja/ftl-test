@@ -57,6 +57,7 @@ export function AddMeetingForm() {
         setMessage(result.message || "Error adding meeting");
       }
     } catch (error) {
+      console.error(error);
       setMessage("An error occurred. Please try again.");
     }
   };
@@ -64,6 +65,7 @@ export function AddMeetingForm() {
   return (
     <div className="max-w-lg mx-auto p-4 border rounded shadow">
       <h1 className="text-xl font-bold mb-4">Add Meeting</h1>
+
       {message && <p className="mb-4 text-green-600">{message}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
