@@ -7,13 +7,15 @@ export function DashboardRuangMeeting() {
   const { currentPage, setCurrentPage, paginatedData, totalPage } =
     usePagination<RuangMeetingDataProps>(ruangMeetingData, 2);
 
-  const pageButtons = [];
-  for (let i = 1; i <= totalPage; i++) {
-    pageButtons.push(i);
-  }
-
   const startIndex = (currentPage - 1) * 2 + 1; // 1-based index for start
   const endIndex = Math.min(currentPage * 2, ruangMeetingData.length); // 1-based index for end
+
+  // const pageButtons = [];
+  // for (let i = 1; i <= totalPage; i++) {
+  //   pageButtons.push(i);
+  // }
+
+  const pageButtons = Array.from({ length: totalPage }, (_, i) => i + 1);
 
   return (
     <>
