@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export function AddMeetingForm() {
   const [formData, setFormData] = useState({
-    id: "",
+    // id: "",
     unit: "",
     ruangMeeting: "",
     kapasitas: "",
@@ -35,7 +36,10 @@ export function AddMeetingForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const startId = "1000";
+
     const payload = {
+      id: startId,
       ...formData,
       kapasitas: parseInt(formData.kapasitas, 10),
       jumlahPeserta: parseInt(formData.jumlahPeserta, 10),
@@ -68,18 +72,6 @@ export function AddMeetingForm() {
 
       {message && <p className="mb-4 text-green-600">{message}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label className="block font-bold">ID</label>
-          <input
-            type="text"
-            name="id"
-            value={formData.id}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-
         <div className="flex flex-row justify-between">
           <div>
             {/* Unit Select */}
@@ -200,9 +192,9 @@ export function AddMeetingForm() {
           ))}
         </div>
 
-        <div className="flex flex-row justify-end gap-3">
+        <div className="flex flex-row justify-end gap-1">
           <button className="w-1/3 p-2 bg-transparent text-red-500 rounded">
-            Batal
+            <Link href="/">Batal</Link>
           </button>
           <button
             type="submit"
