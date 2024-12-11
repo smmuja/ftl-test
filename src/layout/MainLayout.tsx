@@ -12,7 +12,7 @@ export function MainLayout(props: MainLayoutProps) {
       <Navbar />
       <div className="flex flex-row">
         <LeftSideBar />
-        {children}
+        <div className="flex-grow">{children}</div>
       </div>
     </>
   );
