@@ -27,10 +27,6 @@ export function DashboardWrapper() {
 
         <DashboardRuangMeeting />
       </div>
-
-      <div>
-        <AddMeetingForm />
-      </div>
     </>
   );
 }
