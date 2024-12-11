@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 export function DashboardWrapper() {
   return (
     <>
-      <div className="border-gray-400 m-5 bg-blue-50 rounded-md shadow-md p-3">
+      <div className="border-gray-400 m-5 bg-slate-50 rounded-md shadow-md p-3">
         <div className="flex justify-end">
           <Link
             href={"/pesan-ruangan"}
@@ -14,7 +14,7 @@ export function DashboardWrapper() {
             + Pesan Ruangan
           </Link>
         </div>
-        <div className="flex flex-row items-start gap-5">
+        <div className="flex flex-row items-start gap-5 mb-10">
           <div className="bg-teal-700 w-fit p-3">
             <MdOutlineKeyboardArrowLeft />
           </div>
