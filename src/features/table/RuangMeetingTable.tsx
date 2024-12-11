@@ -1,7 +1,13 @@
 // import { ruangMeetingData } from "@/data/RuangMeetingData";
 // import usePagination from "@/hooks/usePagination";
 
-export function RuangMeetingTable({ ruangMeetingData }) {
+import { RuangMeetingDataProps } from "@/types/RuangMeetingDataProps";
+
+export function RuangMeetingTable({
+  ruangMeetingData,
+}: {
+  ruangMeetingData: RuangMeetingDataProps[];
+}) {
   //   const { currentPage, setCurrentPage, paginatedData, totalPage } =
   //     usePagination(ruangMeetingData, 2);
   return (

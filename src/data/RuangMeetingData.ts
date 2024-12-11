@@ -1,4 +1,6 @@
-export const ruangMeetingData = [
+import { RuangMeetingDataProps } from "@/types/RuangMeetingDataProps";
+
+export const ruangMeetingData: RuangMeetingDataProps[] = [
   {
     id: "1",
     unit: "Unit Keuangan",

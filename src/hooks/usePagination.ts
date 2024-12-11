@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function usePagination(data: [], itemsPerPage: number) {
+export default function usePagination<T>(data: T[], itemsPerPage: number) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const paginatedData = (data && data.length ? data : []).slice(
