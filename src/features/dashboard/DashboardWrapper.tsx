@@ -1,3 +1,4 @@
+import { AddMeetingForm } from "../AddMeetingForm/AddMeetingForm";
 import { DashboardProduct } from "./DashboardProduct";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
@@ -16,6 +17,10 @@ export function DashboardWrapper() {
         </div>
 
         <DashboardProduct />
+      </div>
+
+      <div>
+        <AddMeetingForm />
       </div>
     </>
   );
