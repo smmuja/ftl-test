@@ -1,3 +1,86 @@
+# Book Meeting Room Dashboard
+
+## Overview
+
+A quick 1-3 hour technical test to build dashboard/table to display data, and form to create data
+
+Dashboard with table to display booked meeting rooms details and form to book a meeting room with validations
+
+## Tech Stack
+
+- **Next.js**: A React framework for building server-rendered applications.
+- **TypeScript**: A superset of JavaScript that adds static types for better tooling and error checking.
+- **React Icons**: A versatile library for adding scalable, customizable, and interactive icons to React applications.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+## Features
+
+- **Dashboard Booked Rooms**: Visual table representation of booked rooms details.
+- **Form Book Room**: Form to book a meeting room with complete validations.
+
+## Preview
+
+### Dashboard Meeting Room
+
+![Preview](docs/dashboard-meeting-room.png)
+
+### Form Book Meeting Room
+
+![Preview](docs/form-book-meeting-room.png)
+
+## Folder Structure
+
+The project follows a modular folder structure to ensure scalability and maintainability:
+
+```
+src/
+├── components              (Shared components)
+│   └── base                (Reusable base components like Button, IconLink, etc.)
+├── features                (Feature-specific components for building pages)
+├── layout                  (Layout components, e.g., Header, Navbar, Main Layout)
+├── data                    (Static data or mock data files)
+├── utils                   (Utility functions and helper modules)
+├── hooks                   (Custom React hooks for shared logic)
+└── assets                  (Images, icons, and other static assets)
+
+```
+
+## How to Run Locally
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- **Node.js**: Download and install from [nodejs.org](https://nodejs.org/).
+- **Yarn**: Package manager to manage dependencies. Install it from [yarnpkg.com](https://yarnpkg.com/).
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/smmuja/ftl-test.git
+
+   cd ftl-test
+
+   ```
+
+2. Install the necessary dependencies
+   ```bash
+   yarn
+   ```
+
+### Running the Application
+
+1. Start the development server
+
+   ```bash
+   yarn dev
+
+   ```
+
+2. Open your browser and navigate to http://localhost:3000 to view the application.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
