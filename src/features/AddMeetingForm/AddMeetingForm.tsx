@@ -67,8 +67,8 @@ export function AddMeetingForm() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4 border rounded shadow">
-      <h1 className="text-xl font-bold mb-4">Add Meeting</h1>
+    <div className="max-w-lg mx-auto p-4 border rounded shadow mt-5 mb-3">
+      <h1 className="text-xl font-semibold mb-4">Informasi Ruang Meeting</h1>
 
       {message && <p className="mb-4 text-green-600">{message}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -83,7 +83,7 @@ export function AddMeetingForm() {
               className="w-full p-2 border rounded"
               required
             >
-              <option value="">Select Unit</option>
+              <option value="">Pilih Unit</option>
               <option value="Unit Keuangan">Unit Keuangan</option>
               <option value="Unit SDM">Unit SDM</option>
             </select>
@@ -98,7 +98,7 @@ export function AddMeetingForm() {
               className="w-full p-2 border rounded"
               required
             >
-              <option value="">Select Ruang Meeting</option>
+              <option value="">PIlih Ruang Meeting</option>
               <option value="Ruang Prambanan">Ruang Prambanan</option>
             </select>
           </div>
@@ -111,7 +111,8 @@ export function AddMeetingForm() {
             name="kapasitas"
             value={formData.kapasitas}
             onChange={handleChange}
-            className="w-full p-2 border rounded"
+            placeholder="Kapasitas Ruangan"
+            className="w-full p-2 border rounded bg-gray-200"
             required
           />
         </div>
@@ -171,6 +172,7 @@ export function AddMeetingForm() {
             value={formData.jumlahPeserta}
             onChange={handleChange}
             className="w-full p-2 border rounded"
+            placeholder="Masukkan jumlah peserta"
             required
           />
         </div>
@@ -190,6 +192,21 @@ export function AddMeetingForm() {
               <label>{option}</label>
             </div>
           ))}
+        </div>
+
+        {/* Nominal Konsumsi */}
+
+        <div>
+          <label className="block font-bold">Nominal Konsumsi</label>
+          <div className="flex flex-row">
+            <button className="bg-gray-300 p-2 rounded-l-md">Rp.</button>
+            <input
+              type="number"
+              name=""
+              id=""
+              className="w-full p-2 border rounded"
+            />
+          </div>
         </div>
 
         <div className="flex flex-row justify-end gap-1">
