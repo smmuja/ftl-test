@@ -39,7 +39,7 @@ export function RuangMeetingTable({
                     {item.jumlahPeserta}
                   </td>
                   <td className="py-2 px-2 md:px-4 border-b">
-                    {item.jenisKonsumsi}
+                    {item.jenisKonsumsi.join(", ")}
                   </td>
                   <td className="py-2 px-2 md:px-4 border-b"></td>
                 </tr>
