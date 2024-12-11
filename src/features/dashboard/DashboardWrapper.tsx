@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 export function DashboardWrapper() {
   return (
     <>
-      <div className="border-gray-400 m-5 bg-blue-50 rounded-md shadow-md">
+      <div className="border-gray-400 m-5 bg-blue-50 rounded-md shadow-md p-3">
         <div className="flex justify-end">
           <Link
             href={"/pesan-ruangan"}
